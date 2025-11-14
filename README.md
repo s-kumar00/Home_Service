@@ -1,1 +1,1 @@
-# This is home service app, where can be found service for you home easily.
+# Your one-stop solution to easily find trusted home service professionals
