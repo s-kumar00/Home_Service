@@ -5,5 +5,10 @@ export default defineConfig({
   plugins: [react()],
   define: {
     require: undefined
+  },
+  build: {
+    sourcemap: true,
+    minify: 'esbuild',
+    target: 'esnext'
   }
 })
