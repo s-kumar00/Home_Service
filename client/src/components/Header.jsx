@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, NavLink } from "react-router-dom";
-import { AiOutlineSearch } from "react-icons/ai";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTheme } from "../redux/themeSlice";
 import Login from "../Pages/Login";
 import Profile from "./Profile";
 import Services from "../Pages/Services";

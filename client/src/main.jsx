@@ -13,7 +13,6 @@ import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./redux/store";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import PrivateRoute from "./Api/PrivateRoute.jsx";
 
 const router = createBrowserRouter([
   {

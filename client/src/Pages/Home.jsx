@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaCalendarAlt } from "react-icons/fa";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
