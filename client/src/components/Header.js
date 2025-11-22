@@ -8,10 +8,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import vid from "../assets/vid.mp4";
 
 const Header = () => {
-  const dispatch = useDispatch();
   const location = useLocation();
-  const { theme } = useSelector((state) => state.theme);
-  const { currentUser } = useSelector((state) => state.user);
   const [isSignModalOpen, setIsSignModalOpen] = useState(false);
   const [isProfileModelOpen, setIsProfileModelOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
