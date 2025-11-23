@@ -1,31 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { createClient } from "pexels";
 import ContactHome from "./contactHome";
 import ContactAbout from "./contactAbout";
 import ContactService from "./contactService";
+import pik from "../../assets/about1.jpg"
 
 const Contact = () => {
-  const [backgroundImage, setBackgroundImage] = useState("");
-  const client = createClient(
-    "hfpkkoW8LJW3VIsRCmH3Pk7btw5DZ4XUBqCeAdvSaZtpeuG1VvU3AwIG"
-  );
-
-  // Fetch image dynamically from Pexels API
-  useEffect(() => {
-    const fetchBackgroundImage = async () => {
-      try {
-        const query = "Call";
-        const page = Math.floor(Math.random() * 80) + 1;
-        const response = await client.photos.search({ query, page });
-        if (response.photos.length > 0) {
-          setBackgroundImage(response.photos[0].src.original);
-        }
-      } catch (error) {
-        console.error("Error fetching image:", error);
-      }
-    };
-    fetchBackgroundImage();
-  }, []);
+  
 
   // Links configuration
   const links = [
@@ -47,7 +26,7 @@ const Contact = () => {
       {/* Background Image Section */}
       <div className="relative w-full h-[70vh]">
         <img
-          src={backgroundImage || "/placeholder.jpg"}
+          src={pik}
           alt="Dynamic Background"
           className="w-full h-full object-cover opacity-60"
         />
