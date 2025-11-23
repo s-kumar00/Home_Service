@@ -70,20 +70,20 @@ const Header = () => {
         )}
 
         {/* Overlay for darkening the video if needed */}
-        <div className="absolute top-0 left-0 w-full h-full text-black bg-black opacity-50 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full text-gray-500 dark:text-white bg-black opacity-50 z-10"></div>
         {/* Header content */}
         <nav
           className={`relative z-20 ${
             isHome
-              ? "bg-transparent text-white"
+              ? "bg-transparent"
               : "bg-white dark:bg-gray-950"
           }`}
         >
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 text-black dark:text-white">
+          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 text-gray-400 dark:text-white">
             <div className="flex gap-5 justify-between items-center w-3/4 text-2xl">
               <Link to="/" className="flex items-center rtl:space-x-reverse">
-                <p>Fixlt</p>
-                <span className="self-center bg-red-600 rounded-l-md rounded-b-lg p-0.5 font-semibold font-serif whitespace-nowrap">
+                <p className="text-gray-400">Fixlt</p>
+                <span className="self-center text-gray-900 bg-red-600 rounded-l-md rounded-b-lg p-0.5 font-semibold font-serif whitespace-nowrap">
                   HUB
                 </span>
               </Link>
