@@ -9,7 +9,7 @@ import { format } from "date-fns";
 
 const Home = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [destination, setDestination] = useStatße("");
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [dates, setDates] = useState([
     {
