@@ -1,12 +1,9 @@
 import ContactHome from "./contactHome";
 import ContactAbout from "./contactAbout";
 import ContactService from "./contactService";
-import pik from "../../assets/about1.jpg"
+import pik from "../../assets/pik.jpg"
 
 const Contact = () => {
-  
-
-  // Links configuration
   const links = [
     { name: "Home", sectionId: "home" },
     { name: "About", sectionId: "about" },

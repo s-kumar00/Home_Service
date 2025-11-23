@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import pik from "../assets/pik2.jpg";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";

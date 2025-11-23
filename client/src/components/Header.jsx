@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation, NavLink } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { Link, useLocation} from "react-router-dom";
 import Login from "../Pages/Login";
 import Profile from "./Profile";
 import Services from "../Pages/Services";
@@ -53,7 +52,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`relative w-full text-white dark:text-grey-900 ${
+        className={`relative w-full text-white ${
           isHome ? "h-[50vh]" : "h-30"
         } object-cover bg-cover shadow-xl`}
       >
@@ -71,20 +70,20 @@ const Header = () => {
         )}
 
         {/* Overlay for darkening the video if needed */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full text-black bg-black opacity-50 z-10"></div>
         {/* Header content */}
         <nav
           className={`relative z-20 ${
             isHome
               ? "bg-transparent text-white"
-              : "bg-white dark:bg-gray-950 dark:text-white"
+              : "bg-white dark:bg-gray-950"
           }`}
         >
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 text-black dark:text-white">
             <div className="flex gap-5 justify-between items-center w-3/4 text-2xl">
               <Link to="/" className="flex items-center rtl:space-x-reverse">
                 <p>Fixlt</p>
-                <span className="self-center bg-red-600 rounded-l-md rounded-b-lg p-0.5 font-semibold font-serif whitespace-nowrap text-white dark:text-white">
+                <span className="self-center bg-red-600 rounded-l-md rounded-b-lg p-0.5 font-semibold font-serif whitespace-nowrap">
                   HUB
                 </span>
               </Link>
@@ -161,7 +160,7 @@ const Header = () => {
           </div>
         </nav>
         {isHome && (
-        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+        <div className="relative inset-0 flex items-center justify-center z-30 pointer-events-none">
           <h1 className="stext-2xl md:text-4xl font-semibold text-center px-4 drop-shadow-xl animate-[fadeInUp_3s_ease-out]">
             Quality home services made simple!
           </h1>

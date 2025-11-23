@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState} from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaCalendarAlt } from "react-icons/fa";
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,7 +9,7 @@ import { format } from "date-fns";
 
 const Home = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [destination, setDestination] = useState("");
+  const [destination, setDestination] = useStatße("");
   const [openDate, setOpenDate] = useState(false);
   const [dates, setDates] = useState([
     {
